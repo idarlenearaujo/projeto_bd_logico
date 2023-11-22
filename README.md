@@ -1,8 +1,10 @@
 ## Projeto DIO: Recriando um banco de dados para o cenário de ecommerce 🎲📉👩‍💻
 
-Este projeto foi replicado com algumas modificações o conteúdo do desafio ecommerce. Neste desafio foi necessário desenvolver o modelo lógico (arquivo ECOMMERCE), inserir a estrutura e persistindo-a no banco de dados (arquivo criandoBDEcommerce). Para podermos manipular este banco, também inseri alguns dados em todas as tabelas, respeitando a lógica de cada tabela (arquivo inserindoDadosBD). Por fim construi um arquivo para manipulação dos dados (arquivo manipulandoBD).
+Este projeto envolveu a replicação, com algumas modificações, do desafio de e-commerce. A primeira etapa consistiu no desenvolvimento do modelo lógico, devidamente documentado no arquivo "ECOMMERCE". Posteriormente, procedeu-se à implementação da estrutura, persistindo-a no banco de dados conforme descrito no arquivo "criandoBDEcommerce".
 
-Foram propostas algumas perguntas a serem respondidas mediante aos dados inseridos. Foram utilizados SELECT, UPDATE, DELETE, ALTER
+Para facilitar a manipulação do banco, foram inseridos dados em todas as tabelas, respeitando as diretrizes específicas de cada uma, conforme detalhado no arquivo "inserindoDadosBD". Além disso, foi elaborado um arquivo denominado "manipulandoBD", destinado à manipulação eficiente dos dados.
+
+O desafio tinha também como objetivo responder a uma série de perguntas formuladas com base nos dados inseridos. Para atender a essa demanda, foram empregadas instruções SQL, incluindo SELECT, UPDATE, DELETE e ALTER, evidenciando a capacidade robusta do sistema em lidar com consultas e atualizações de dados de maneira eficaz.
 
 # ❓ Perguntas a serem respondidas no arquivo (manipulandoBD):
 

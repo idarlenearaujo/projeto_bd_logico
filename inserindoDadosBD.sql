@@ -21,6 +21,7 @@ values('Maria', 'M', 'Silva', 123456789, 'Rua Silva de Prata 29, Carangola - Cid
 ('Ricardo', 'F', 'Silva', 45678913, 'Avenida Alemeda Vinha 1009, Centro - Cidade das Flores'),
 ('Julia', 'S', 'França', 789123456, 'Rua Lareijras 861, Centro - Cidade das Flores'),
 ('Roberta', 'G', 'Assis', 98745631, 'Avenida Koller 19, Centro - Cidade das Flores'),
+('Fernando', 'S', 'Silveira', 12358965477, 'Avenida Presidente Vargas 344, Centro - Cidade das Flores'),
 ('Isabela', 'M', 'Cruz', 654789123, 'Rua Alemeda das Flores 28, Centro - Cidade das Flores');
 
 -- Inserindo Produtos
@@ -48,13 +49,17 @@ values('José das Graças', 'Zé imports', null, '12345678989', 'Minas Gerais', 
 -- Inserindo Pedidos
 insert into orders(idOrderClient, orderStatus, orderDescription, sedex, sendValue, paymentCash)
 values(1, 'Cancelado', 'Pedido de produto', null, 14.50, false),
+(1, 'Confirmado', 'Pedido de uma blusa G', null, 20.00, true),
 (2, default, 'Pedido de produto 2', null, 11.30, false),
 (3, 'Confirmado', 'Pedido de uma blusa', null, 20.00, true),
 (4, 'Em processamento', 'Pedido', null, default, false),
 (5, 'Confirmado', null, null, default, true),
 (6, default, null, null, 5.00, default),
 (2, default, null, null, default, false),
-(6, 'Confirmado', null, null, 33.50, true);
+(7, default, null, null, default, false),
+(7, 'Em processamento', 'Pedido', null, default, false),
+(6, 'Confirmado', null, null, 33.50, true),
+(6, 'Cancelado', 'Pedido de produto', null, 14.50, false);
 
 -- Inserindo Pagamentos
 insert into payments(idOrder, typePayment, limitAvailable)
@@ -100,7 +105,11 @@ values(1, 1, default, default),
 (5, 5, default, default),
 (6, 6, 4, default),
 (6, 7, 3, default),
-(4, 8, 10, default);
+(4, 8, 10, default),
+(4, 9, default, default),
+(4, 10, 2, default),
+(2, 11, 3, default),
+(1, 12, 5, default);
 
 -- Inserindo N:N - Produto - Estoque
 insert into productStorage(idPSProduct, idPSStorage, PSLocation)
@@ -110,3 +119,5 @@ values(1, 1, 'Curitiba'),
 (4, 5, 'Rio de Janeiro'),
 (5, 6, 'Brasília'),
 (6, 3, 'São Paulo');
+
+# END

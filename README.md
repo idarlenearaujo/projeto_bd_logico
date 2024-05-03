@@ -35,6 +35,9 @@ O desafio tinha também como objetivo responder a uma série de perguntas formul
 * Excluir pedidos 2 e 6.
 * Mudar nome Ricardo para João.
 
+  ![image](https://github.com/idarlenearaujo/projeto_bd_logico/assets/37625274/a44c655a-efde-4b1a-85b2-737a4f9f55f3)
+
+
 # ✔️ Também aconteceram alterações no banco (manipulandoBD) para o caso Oficina:
 
 * Modificação de campo por ID
